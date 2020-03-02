@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Latihan8</string>
+    <string name="imageView_Main_Bg">Main Background</string>
+    <string name="textView_Main_Judul">Band Favorite</string>
+    <string name="checkBox_Main_Band1">Muse</string>
+    <string name="checkBox_Main_Band2">Tokyo Jihen</string>
+    <string name="checkBox_Main_Band3">Nirvana</string>
+    <string name="textView_Main_Judul2">Makanan Favorite</string>
+    <string name="radioButton_Main_Makan1">Nasi Goreng</string>
+    <string name="radioButton_Main_Makan2">Sayur Capcay</string>
+    <string name="radioButton_Main_Makan3">Kentang Rebus</string>
+    <string name="button_Main_Submit">Submit</string>
+</resources>

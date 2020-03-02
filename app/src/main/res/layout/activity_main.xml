@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView_Main_Kiri"
+        android:layout_width="75dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/imageView_Main_Bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_kiri" />
+
+    <ImageView
+        android:id="@+id/imageView_Main_Kanan"
+        android:layout_width="75dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/imageView_Main_Bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_kanan" />
+
+    <TextView
+        android:id="@+id/textView_Main_Judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/textView_Main_Judul"
+        style="@style/textViewJudul"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_Main_Kanan"
+        app:layout_constraintStart_toEndOf="@+id/imageView_Main_Kiri"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Main_Band1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/checkBox_Main_Band1"
+        style="@style/textList"
+        app:layout_constraintStart_toEndOf="@+id/imageView_Main_Kiri"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Main_Judul" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Main_Band2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/checkBox_Main_Band2"
+        style="@style/textList"
+        app:layout_constraintStart_toEndOf="@+id/imageView_Main_Kiri"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Main_Band1" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Main_Band3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/checkBox_Main_Band3"
+        style="@style/textList"
+        app:layout_constraintStart_toEndOf="@+id/imageView_Main_Kiri"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Main_Band2" />
+
+    <TextView
+        android:id="@+id/textView_Main_Judul2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/textView_Main_Judul2"
+        style="@style/textViewJudul"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_Main_Kanan"
+        app:layout_constraintStart_toEndOf="@+id/imageView_Main_Kiri"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Main_Band3" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup_Main_Makan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView_Main_Kiri"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Main_Judul2">
+
+        <RadioButton
+            android:id="@+id/radioButton_Main_Makan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textList"
+            android:layout_weight="1"
+            android:text="@string/radioButton_Main_Makan1" />
+
+        <RadioButton
+            android:id="@+id/radioButton_Main_Makan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/textList"
+            android:text="@string/radioButton_Main_Makan2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_Main_Makan3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textList"
+            android:layout_weight="1"
+            android:text="@string/radioButton_Main_Makan3" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_Main_Submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/button_Main_Submit"
+        style="@style/buttonSubmit"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_Main_Kanan"
+        app:layout_constraintStart_toEndOf="@+id/imageView_Main_Kiri"
+        app:layout_constraintTop_toBottomOf="@+id/RadioGroup_Main_Makan" />
+
+</android.support.constraint.ConstraintLayout>
