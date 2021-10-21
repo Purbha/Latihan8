@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if(Band.equals("")) { Band = "Tidak Ada"; }
                 int Sel_ID = RG_Makanan.getCheckedRadioButtonId();
+                //Log.d("CEK", "onClick: " + Sel_ID);
                 String Makanan = "";
                 if(Sel_ID > 0) {
                     RB_Makanan = findViewById(Sel_ID);
